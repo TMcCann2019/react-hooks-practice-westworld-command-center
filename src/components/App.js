@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Segment } from "semantic-ui-react";
 import "../stylesheets/App.css";
 
