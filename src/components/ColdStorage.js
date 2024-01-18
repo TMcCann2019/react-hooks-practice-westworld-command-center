@@ -2,7 +2,7 @@ import React from "react";
 import { Segment } from "semantic-ui-react";
 import HostList from "./HostList";
 
-function ColdStorage() {
+function ColdStorage({setSelected}) {
   return (
     <Segment.Group className="HQComps">
       <Segment compact>

@@ -2,9 +2,9 @@ import React from "react";
 import { Segment } from "semantic-ui-react";
 import Area from "./Area";
 
-function WestworldMap() {
+function WestworldMap({ formattedAreas, setSelected }) {
   return <Segment id="map">
-    <Area />
+    <Area setSelected={setSelected}/>
   </Segment>;
 }
 

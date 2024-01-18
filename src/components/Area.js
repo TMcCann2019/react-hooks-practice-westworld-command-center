@@ -2,7 +2,7 @@ import React from "react";
 import "../stylesheets/Area.css";
 import HostList from "./HostList";
 
-function Area() {
+function Area({setSelected}) {
   return (
     <div
       className="area"
@@ -13,7 +13,7 @@ function Area() {
       <h3 className="labels">
         {/* Don't just pass in the name from the data...clean that thing up */}
       </h3>
-      <HostList />
+      <HostList setSelected={setSelected}/>
     </div>
   );
 }

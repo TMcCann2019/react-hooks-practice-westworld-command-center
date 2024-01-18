@@ -11,8 +11,8 @@ function App() {
 
   return (
     <Segment id="app">
-      <WestWorldMap />
-      <Headquarters />
+      <WestWorldMap formattedAreas={formattedAreas} setSelected={setSelected}/>
+      <Headquarters handleActivate={handleActivate} updateHost={updateHost} setSelected={setSelected}/>
     </Segment>
   );
 }

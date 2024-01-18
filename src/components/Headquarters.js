@@ -5,19 +5,19 @@ import "../stylesheets/Headquarters.css";
 import ColdStorage from "./ColdStorage";
 import LogPanel from "./LogPanel";
 
-function Headquarters() {
+function Headquarters({handleActivate, updateHost, setSelected}) {
   const [logs, setLogs] = useState([]);
 
   return (
     <Grid celled="internally">
       <Grid.Column width={8}>
-        <ColdStorage />
+        <ColdStorage setSelected={setSelected}/>
       </Grid.Column>
       <Grid.Column width={5}>
-        <Details />
+        <Details updateHost={updateHost}/>
       </Grid.Column>
       <Grid.Column width={3}>
-        <LogPanel />
+        <LogPanel logs={logs} handleActivate={handleActivate}/>
       </Grid.Column>
     </Grid>
   );
