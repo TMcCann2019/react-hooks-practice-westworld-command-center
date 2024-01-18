@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { Grid } from "semantic-ui-react";
 import Details from "./Details";
 import "../stylesheets/Headquarters.css";

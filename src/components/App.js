@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
 import { Segment } from "semantic-ui-react";
 import "../stylesheets/App.css";
-import WestWorldMap from "../WestWorldMap";
-import Headquarters from "../Headquarters";
+import WestworldMap from "./WestworldMap";
+import Headquarters from "./Headquarters";
 
 function App() {
   const [hosts, setHosts] = useState([]);
@@ -11,7 +11,7 @@ function App() {
 
   return (
     <Segment id="app">
-      <WestWorldMap formattedAreas={formattedAreas} setSelected={setSelected}/>
+      <WestworldMap formattedAreas={formattedAreas} setSelected={setSelected}/>
       <Headquarters handleActivate={handleActivate} updateHost={updateHost} setSelected={setSelected}/>
     </Segment>
   );
