@@ -1,5 +1,6 @@
 import React from "react";
 import "../stylesheets/Area.css";
+import HostList from "./HostList";
 
 function Area() {
   return (
@@ -12,7 +13,7 @@ function Area() {
       <h3 className="labels">
         {/* Don't just pass in the name from the data...clean that thing up */}
       </h3>
-      {/* See Checkpoint 1 item 2 in the Readme for a clue as to what goes here */}
+      <HostList />
     </div>
   );
 }

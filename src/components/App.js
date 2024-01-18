@@ -1,11 +1,18 @@
 import React, {useState, useEffect} from "react";
 import { Segment } from "semantic-ui-react";
 import "../stylesheets/App.css";
+import WestWorldMap from "../WestWorldMap";
+import Headquarters from "../Headquarters";
 
 function App() {
+  const [hosts, setHosts] = useState([]);
+  const [selected, setSelected] = useState(null);
+  const [areas, setAreas] = useState([]);
+
   return (
     <Segment id="app">
-      {/* What components should go here? Check out Checkpoint 1 of the Readme if you're confused */}
+      <WestWorldMap />
+      <Headquarters />
     </Segment>
   );
 }
